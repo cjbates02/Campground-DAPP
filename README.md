@@ -1,11 +1,25 @@
-Decentralized Booking System for Campsites
+# Decentralized Booking System for Campsites
 
-This project is a decentralized booking system for campsites using the Ethereum blockchain. It utilizes the React JavaScript library for the frontend, and the Ethers.js library for interacting with the Ethereum network. The project also utilizes MetaMask as a web3 provider to connect to the Ethereum network.
+This project is a decentralized booking system for campsites built on the Ethereum blockchain. It utilizes the React JavaScript library for the frontend and the Ethers.js library for interacting with the Ethereum network, with MetaMask serving as the web3 provider.
 
-To use the system, users must first connect their wallet using the connectWallet function. Once connected, they can then check the availability of a campsite by submitting the campsite number and calling the campsiteStatus function. If the campsite is available, they can then book the campsite by calling the bookSite function and providing the required information, including their name and the campsite number they wish to book.
+## Features
 
-The smart contract used in this project is deployed at the contractAddress specified in the code, and its ABI (Application Binary Interface) is imported from the Campground.json file. The smart contract has functions for checking the status of a campsite, as well as for booking and checking in/out of a campsite.
+- **Wallet Connection**: Users can connect their wallet using the `connectWallet` function.
+- **Campsite Availability**: Check the availability of a campsite by submitting the campsite number through the `campsiteStatus` function.
+- **Booking Process**: If available, users can book a campsite by calling the `bookSite` function and providing their name and the desired campsite number.
 
-The user interface also includes a loading spinner, using the ClipLoader component from the react-spinners library, to indicate when a transaction is being mined on the Ethereum network.
+## Smart Contract
 
-Overall, this project demonstrates the potential for using blockchain technology in creating decentralized and secure booking systems for various industries.
+The smart contract is deployed at the specified `contractAddress` and its ABI (Application Binary Interface) is imported from the `Campground.json` file. The contract includes functions for:
+
+- Checking campsite status
+- Booking a campsite
+- Checking in/out of a campsite
+
+## User Interface
+
+The interface features a loading spinner, implemented with the `ClipLoader` component from the `react-spinners` library, to indicate when a transaction is being mined on the Ethereum network.
+
+## Conclusion
+
+This project showcases the potential of blockchain technology in creating decentralized and secure booking systems for various industries.
